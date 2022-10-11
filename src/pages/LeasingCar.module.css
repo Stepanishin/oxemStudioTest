@@ -1,0 +1,69 @@
+.LeasingCar {
+    width: 100%;
+}
+
+.LeasingCar_container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 213px 47px;
+}
+
+.LeasingCar_data_container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.LeasingCar_data_container > div {
+    min-width: 427px;
+    height: 119px;
+}
+
+.LeasingCar_total_container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1440px) {
+    .LeasingCar_container {
+        max-width: 1120px;
+    }
+    .LeasingCar_data_container > div {
+        min-width: 320px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .LeasingCar_container {
+        max-width: 768px;
+        padding-top: 64px 36px;
+    }
+    .LeasingCar_data_container {
+        flex-direction: column;
+    }
+    .LeasingCar_data_container > div {
+        min-width: 100%;
+    }
+    .LeasingCar_total_container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .LeasingCar_container {
+        max-width: 320px;
+        padding: 44px 20px;
+    }
+    .LeasingCar_data_container {
+        flex-direction: column;
+    }
+    .LeasingCar_data_container > div {
+        min-width: 280px;
+    }
+}

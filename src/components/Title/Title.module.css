@@ -1,0 +1,17 @@
+.Title {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 90%;
+    color: #111111;
+    max-width: 753px;
+}
+
+@media screen and (max-width: 767px) {
+    .Title {
+        font-size: 34px;
+        text-align: start;
+        align-self: flex-start;
+    }
+}

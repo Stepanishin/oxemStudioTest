@@ -1,0 +1,71 @@
+.SubmitBtn_container {
+    position: relative;
+}
+
+.SubmitBtn_btn {
+    width: 426px;
+    height: 68px;
+    background: #FF9514;
+    border-radius: 40px;
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.SubmitBtn_btn:hover {
+    background: #111111;
+}
+
+.SubmitBtn_btn_disabled {
+    position: absolute;
+    background: #ffffff;
+    opacity: 0.8;
+    border-radius: 16px;
+    width: 440px;
+    height: 84px;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.SubmitBtn_btn:active {
+    background: #575757;
+}
+
+.loader {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #FFFFFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+  
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+@media screen and (max-width: 1440px) {
+    .SubmitBtn_btn {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .SubmitBtn_btn {
+        width: 345px;
+    }
+}

@@ -1,0 +1,99 @@
+.InitialFeeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 427px;
+    gap: 24px;
+    position: relative;
+}
+
+.InitialFeeContainer_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+}
+
+.InitialFeeContainer_container {
+    width: 100%;
+    background: #F3F3F4;
+    border-radius: 16px;
+}
+
+.InitialFeeContainer_container_disabled {
+    position: absolute;
+    background: #ffffff;
+    opacity: 0.8;
+    border-radius: 16px;
+    width: 100%;
+    height: 84px;
+    top: 45px;
+    left: 0px;
+    z-index: 10;
+}
+
+.InitialFeeContainer_content_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 24px;
+}
+
+.InitialFeeContainer_content_description_container {
+    display: flex;
+    background: #EBEBEC;
+    border-radius: 16px;
+    justify-content: start;
+    padding: 13px;
+    width: 69px;
+}
+
+.InitialFeeContainer_content_number {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #575757;
+    
+}
+
+.InitialFeeContainer_content_description {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+    color: #575757;
+    background: none;
+    width: 25px;
+}
+
+.InitialFeeContainer_content_description_procent {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+    color: #575757;
+    background: none;
+}
+
+@media screen and (max-width: 767px)  {
+    .InitialFeeContainer_title {
+        font-size: 14px;
+    }
+    .InitialFeeContainer_content_number {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .InitialFeeContainer_content_description {
+        font-size: 22px;
+        line-height: 20px;
+    }  
+    .InitialFeeContainer_content_description_procent {
+        font-size: 22px;
+    }
+}

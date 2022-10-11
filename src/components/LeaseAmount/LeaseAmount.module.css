@@ -1,0 +1,26 @@
+.LeaseAmount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 427px;
+    gap: 24px;
+    position: relative;
+}
+
+.LeaseAmount_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+}
+
+.LeaseAmount_content {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 90%;
+    color: #333333;
+}

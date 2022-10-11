@@ -1,0 +1,75 @@
+.LeasingTermContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 427px;
+    gap: 24px;
+    position: relative;
+}
+
+.LeasingTermContainer_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+}
+
+.LeasingTermContainer_container {
+    width: 100%;
+    padding: 16px 24px 16px 24px;
+    background: #F3F3F4;
+    border-radius: 16px;
+}
+
+.LeasingTermContainer_container_disabled {
+    position: absolute;
+    background: #ffffff;
+    opacity: 0.8;
+    border-radius: 16px;
+    width: 100%;
+    height: 84px;
+    top: 45px;
+    left: 0px;
+    z-index: 10;
+}
+
+.LeasingTermContainer_content_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LeasingTermContainer_content_number {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #575757;
+    background: none;
+}
+
+.LeasingTermContainer_content_description {
+    font-family: 'Nekst-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: right;
+    color: #575757;
+}
+
+@media screen and (max-width: 767px)  {
+    .LeasingTermContainer_title {
+        font-size: 14px;
+    }
+    .LeasingTermContainer_content_number {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .LeasingTermContainer_content_description {
+        font-size: 22px;
+        line-height: 20px;
+    }  
+}
