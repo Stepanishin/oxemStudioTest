@@ -10,6 +10,7 @@ interface IInputRange {
 
 const InputRange: FC<IInputRange> = ({ min, max, changeNumber, value }) => {
 
+    // Код для покраски inputa при прогрессе в оранжевый цвет
     for (let e of document.querySelectorAll('input[type="range"].slider_progress') as any) {
         e.style.setProperty('--value', e.value);
         e.style.setProperty('--min', e.min == '' ? '0' : e.min);

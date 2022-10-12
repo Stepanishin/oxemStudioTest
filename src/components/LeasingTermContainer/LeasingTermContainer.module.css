@@ -72,4 +72,24 @@
         font-size: 22px;
         line-height: 20px;
     }  
+    .LeasingTermContainer_container_disabled {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 319px)  {
+    .LeasingTermContainer_container {
+        padding: 3.3vw 6vw;
+    }
+    .LeasingTermContainer_title {
+        font-size: 2vw;
+    }
+    .LeasingTermContainer_content_number {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    .LeasingTermContainer_content_description {
+        font-size: 6vw;
+        line-height: 6vw;
+    }  
 }

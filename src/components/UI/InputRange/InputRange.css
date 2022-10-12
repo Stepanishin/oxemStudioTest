@@ -90,7 +90,7 @@ input[type=range].styled_slider {
     border: none;
     box-shadow: none;
     box-sizing: border-box;
-  }
+}
   
   input[type=range].styled_slider.slider_progress::-ms-fill-lower {
     height: 2px;
@@ -99,4 +99,21 @@ input[type=range].styled_slider {
     background: #FF9514;
     border: none;
     border-right-width: 0;
+}
+
+@media screen and (max-width: 767px) {
+  input[type=range].styled_slider {
+    bottom: 10px;
   }
+}
+
+@media screen and (max-width: 319px) {
+  input[type=range].styled_slider {
+    top: 24vw;
+  }
+  input[type=range].styled_slider::-webkit-slider-thumb {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5vw;
+  }
+}

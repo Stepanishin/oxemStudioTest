@@ -72,6 +72,27 @@
         font-size: 22px;
         line-height: 20px;
     }   
+    .CarCostContainer_container_disabled {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 319px)  {
+    .CarCostContainer_container {
+        padding: 3.3vw 6vw;
+    }
+    .CarCostContainer_title {
+        font-size: 4vw;
+    }
+    .CarCostContainer_content_number {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    .CarCostContainer_content_description {
+        font-size: 6vw;
+        line-height: 6vw;
+    }   
+
 }
 
 

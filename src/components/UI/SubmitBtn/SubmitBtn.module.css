@@ -69,3 +69,24 @@
         width: 345px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .SubmitBtn_btn {
+        width: 280px;
+        font-size: 22px;
+        line-height: 20px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .SubmitBtn_container {
+        margin: 0 auto;
+    }
+    .SubmitBtn_btn {
+        width: 75vw;
+        font-size: 6vw;
+        line-height: 6vw;
+        height: 19vw;
+    }
+}

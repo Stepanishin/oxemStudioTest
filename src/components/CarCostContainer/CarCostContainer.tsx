@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { carCostSlice } from '../../store/reducers/getCarCostReducer';
 import InputRange from '../UI/InputRange/InputRange';
 import styles from './CarCostContainer.module.css'
-import numberWithSpaces from '../../hooks/numberWithSpace'
 
 interface ICarCostContainer {
     min: string,
@@ -14,14 +13,9 @@ const CarCostContainer: FC<ICarCostContainer> = ({min, max}) => {
 
     let [carPrice, setCarPrice] = useState(1000000)
 
-    const { number } = useAppSelector(state => state.carCostSlice)
     const { carCost } = carCostSlice.actions
     const dispatch = useAppDispatch()
     const { isLoading } = useAppSelector(state => state.loaderSlice)
-
-    const changePrice = (e:any) => {
-        setCarPrice(e.target.value)
-    }
 
     const changeNumber = (e:any) => {
         setCarPrice(e.target.value)    

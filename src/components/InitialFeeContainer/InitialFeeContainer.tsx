@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { initialFeeSlice } from '../../store/reducers/getInitialFeeReducer';
 import InputRange from '../UI/InputRange/InputRange';
 import styles from './InitialFeeContainer.module.css'
-import numberWithSpaces from '../../hooks/numberWithSpace'
 
 interface IInitialFeeContainer {
     min: string,

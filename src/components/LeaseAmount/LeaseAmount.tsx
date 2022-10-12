@@ -1,5 +1,5 @@
-import React, { FC,useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import React, { FC } from 'react';
+import { useAppSelector } from '../../hooks/redux';
 import styles from './LeaseAmount.module.css'
 import numberWithSpaces from '../../hooks/numberWithSpace'
 

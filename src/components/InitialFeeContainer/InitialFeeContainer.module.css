@@ -96,4 +96,36 @@
     .InitialFeeContainer_content_description_procent {
         font-size: 22px;
     }
+    .InitialFeeContainer_content_container {
+        height: 58.4px;
+    }
+    .InitialFeeContainer_container_disabled {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 319px)  {
+    .InitialFeeContainer_content_container {
+        padding: 2vw 6vw;
+        height: 15vw;
+    }
+    .InitialFeeContainer_title {
+        font-size: 2vw;
+    }
+    .InitialFeeContainer_content_number {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    .InitialFeeContainer_content_description {
+        font-size: 6vw;
+        line-height: 6vw;
+    }  
+    .InitialFeeContainer_content_description_procent {
+        font-size: 6vw;
+    }
+    .InitialFeeContainer_content_description_container {
+        border-radius: 3vw;
+        padding: 2vw;
+        width: 20vw;
+    }
 }

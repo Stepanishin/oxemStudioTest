@@ -24,3 +24,31 @@
     line-height: 90%;
     color: #333333;
 }
+
+@media screen and (max-width: 767px) {
+    .LeaseAmount {
+        gap: 2px;
+    }
+    .LeaseAmount_title {
+        font-size: 14px;
+        line-height: 136%;
+    }
+    .LeaseAmount_content {
+        font-size: 22px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .LeaseAmount {
+        gap: 0.6vw;
+    }
+    .LeaseAmount_title {
+        font-size: 2vw;
+        line-height: 136%;
+    }
+    .LeaseAmount_content {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+}

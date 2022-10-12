@@ -42,7 +42,7 @@
 @media screen and (max-width: 1120px) {
     .LeasingCar_container {
         max-width: 768px;
-        padding-top: 64px 36px;
+        padding: 64px 36px;
     }
     .LeasingCar_data_container {
         flex-direction: column;
@@ -65,5 +65,22 @@
     }
     .LeasingCar_data_container > div {
         min-width: 280px;
+        height: 96px;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .LeasingCar_container {
+        max-width: 90vw;
+        padding: 13vw 6vw;
+    }
+    .LeasingCar_data_container {
+        flex-direction: column;
+    }
+    .LeasingCar_data_container > div {
+        min-width: 80vw;
+        height: 30vw;
+        gap: 2.5vw;
     }
 }

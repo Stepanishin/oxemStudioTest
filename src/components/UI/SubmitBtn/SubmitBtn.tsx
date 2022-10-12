@@ -14,6 +14,7 @@ const SubmitBtn: FC<ISubmitBtn> = ({title}) => {
 
     let [fetchNewRequest] = useAddNewRequestMutation()
 
+    // Получаем все данные для тела запроса
     const {initialFeeProcent} = useAppSelector(state => state.initialFeeSlice)
     const {number:carCost} = useAppSelector(state => state.carCostSlice)
     const {leasingTermAmount} = useAppSelector(state => state.leasingTermSlice)
@@ -25,6 +26,8 @@ const SubmitBtn: FC<ISubmitBtn> = ({title}) => {
     let resultMonthlyPayment = Math.round((carCost - initialFeeAmount) * ((0.035 * Math.pow((1 + 0.035), leasingTermAmount)) / (Math.pow((1 + 0.035), leasingTermAmount) - 1)));
     let resultLeaseAmount = Math.round(initialFeeAmount + (leasingTermAmount * resultMonthlyPayment))
 
+
+    //Формирую тело запроса
     let contact: IRequest = {
         car_coast: carCost,
         initail_payment: initialFeeAmount,
